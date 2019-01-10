@@ -1,0 +1,46 @@
+.features {
+  padding-top: 135px;
+  &__content {
+
+  }
+  &__list {
+    padding-top: 115px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  &__item {
+    flex: 0 1 32%;
+    display: flex;
+  }
+  &__item-content {
+    padding-left: 20px;
+  }
+  &__item-icon {
+    align-self: flex-start;
+    &--diamond {
+      min-width: 80px;
+      height: 62px;
+      background: url(images/f-icon-diamond.png) no-repeat;
+    }
+    &--parallax {
+      min-width: 78px;
+      height: 62px;
+      background: url(images/f-icon-parallax.png) no-repeat;
+    }
+    &--colors {
+      min-width: 77px;
+      height: 62px;
+      background: url(images/f-icon-colors.png) no-repeat;
+    }
+  }
+  &__item-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-sapphire-a;
+    text-transform: capitalize;
+  }
+  &__item-subtitle {
+    color: $color-gray-b;
+  }
+}

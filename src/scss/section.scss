@@ -1,0 +1,19 @@
+.section {
+  &__header {
+    text-align: center;
+  }
+  &__title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    &--blue {
+      color: $color-light-blue-b;
+    }
+  }
+  &__subtitle {
+    font-size: 1.125rem;
+    &--gray {
+      color: $color-gray-a;
+    }
+  }
+}
