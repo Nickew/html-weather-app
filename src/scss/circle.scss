@@ -1,0 +1,42 @@
+.circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  &--lg {
+    width: 90px;
+    height: 90px;
+  }
+  &--sm {
+    width: 56px;
+    height: 56px;
+  }
+  &--orange {
+    top: 50%;
+    left: 10%;
+    background: $color-orange-a;
+    color: $color-white;
+  }
+  &--dark-blue {
+    top: 43%;
+    right: 10%;
+    background: $color-dark-blue;
+    color: $color-white;
+  }
+  &--white {
+    top: 12%;
+    right: 18%;
+    background: $color-white;
+    color: $color-light-blue-a;
+  }
+  &--yellow {
+    bottom: -5%;
+    right: 15%;
+    background: $color-yellow;
+    color: $color-light-blue-b;
+  }
+}

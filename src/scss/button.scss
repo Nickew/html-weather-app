@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  text-decoration: none;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+  transition: all .25s;
+
+  &:hover {
+    opacity: .8;
+  }
+  &--orange {
+    width: 158px;
+    height: 52px;
+    border-radius: 5px;
+    background: $color-orange-a;
+    color: $color-white;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  &--dark-blue {
+    width: 158px;
+    height: 52px;
+    border-radius: 5px;
+    background: $color-dark-blue;
+    color: $color-white;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+}

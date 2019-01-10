@@ -1,0 +1,22 @@
+.nav {
+  &__list {
+    display: inline-flex;
+    list-style-type: none;
+  }
+  &__item {
+    font-size: 1.125rem;
+    padding-right: 80px;
+    & > a {
+      color: $color-light-gray-a;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: color .25s;
+      &:hover {
+        color: $color-white;
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

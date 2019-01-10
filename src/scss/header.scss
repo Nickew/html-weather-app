@@ -1,0 +1,76 @@
+.header {
+  height: 100vh;
+  &__nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logotype {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 3px;
+  }
+  &__intro {
+    display: flex;
+    padding-top: 115px;
+  }
+  &__content {
+    flex: 0 1 41.66%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 100px;
+  }
+  &__title {
+    font-size: 3.75rem;
+    color: #fff;
+  }
+  &__desc {
+    padding-top: 10px;
+    font-size: 1.125rem;
+    color: #fff;
+    max-width: 400px;
+  }
+  &__buttons {
+    padding-top: 30px;
+    display: flex;
+    & > .button:first-child {
+      margin-right: 12px;
+    }
+  }
+  &__composition {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__scroll-down {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+  }
+  &__scroll-down-button {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: $color-white;
+    color: $color-red;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .25s;
+    &:hover {
+      transform: translateY(10px);
+    }
+  }
+  &__waves {
+    overflow: hidden;
+  }
+  &--blue {
+    background: url('images/h-bg.png') no-repeat;
+  }
+}

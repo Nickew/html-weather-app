@@ -1,4 +1,10 @@
-body {
-  background: black;
-  color: #fff;
-}
+@import '_reset.scss';
+@import '_base.scss';
+@import '_colors.scss';
+
+@import 'container.scss';
+@import 'header.scss';
+@import 'nav.scss';
+@import 'socials.scss';
+@import 'circle.scss';
+@import 'button.scss';
