@@ -1,5 +1,9 @@
 .screenshot {
+  padding-top: 250px;
   display: flex;
+  &:first-child {
+    padding-top: 0;
+  }
   &:nth-child(even) {
     & > .screenshot__image-container {
       order: 1;
@@ -9,6 +13,10 @@
     position: relative;
     margin-left: 90px;
     margin-right: 180px;
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
   }
   &__content {
     flex: 0 1 41.66%;
@@ -72,6 +80,7 @@
   }
   &__circle {
     position: absolute;
+    z-index: 3;
     &--left {
       left: -22%;
       top: 64%;
@@ -79,6 +88,26 @@
     &--right {
       right: -13%;
       top: 27%;
+    }
+  }
+  &__background-text {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    font-size: 16rem;
+    font-weight: 300;
+    line-height: 0;
+    text-transform: capitalize;
+    transform: rotateZ(90deg);
+    color: $color-gray-blue;
+    &--cloudy {
+      left: -32%;
+    }
+    &--sunny {
+      left: -10%;
+    }
+    &--rainy {
+      left: 10%;
     }
   }
 }

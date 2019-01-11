@@ -15,6 +15,11 @@
         color: $color-white;
       }
     }
+    &--gray {
+      & > a {
+        color: $color-gray-suit;
+      }
+    }
     &:last-child {
       padding-right: 0;
     }
