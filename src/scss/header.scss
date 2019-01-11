@@ -67,8 +67,24 @@
       transform: translateY(10px);
     }
   }
-  &__waves {
-    overflow: hidden;
+  &__circle-1, &__circle-2, &__circle-3, &__circle-4 {
+    position: absolute;
+  }
+  &__circle-1 {
+    top: 50%;
+    left: 10%;
+  }
+  &__circle-2 {
+    top: 43%;
+    right: 10%;
+  }
+  &__circle-3 {
+    top: 12%;
+    right: 18%;
+  }
+  &__circle-4 {
+    bottom: -5%;
+    right: 15%;
   }
   &--blue {
     background: url('images/h-bg.png') no-repeat;

@@ -1,5 +1,4 @@
 .circle {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,27 +15,49 @@
     height: 56px;
   }
   &--orange {
-    top: 50%;
-    left: 10%;
     background: $color-orange-a;
     color: $color-white;
   }
+  &--light-blue {
+    background: $color-light-blue-a;
+    color: $color-white;
+    font-size: 1.875rem;
+  }
   &--dark-blue {
-    top: 43%;
-    right: 10%;
     background: $color-dark-blue;
     color: $color-white;
   }
   &--white {
-    top: 12%;
-    right: 18%;
     background: $color-white;
     color: $color-light-blue-a;
   }
   &--yellow {
-    bottom: -5%;
-    right: 15%;
     background: $color-yellow;
     color: $color-light-blue-b;
+  }
+  &--yellow-w {
+    background: $color-yellow;
+    color: $color-white;
+    text-transform: capitalize;
+  }
+  &--orange {
+    background: $color-orange-a;
+    color: $color-white;
+    font-size: 1.875rem;
+  }
+  &--light-orange {
+    background: $color-light-orange;
+    color: $color-white;
+    text-transform: capitalize;
+  }
+  &--rainy {
+    background: $color-rainy;
+    color: $color-sky-gray;
+    text-transform: capitalize;
+  }
+  &--rainy-blue {
+    background: $color-rainy-blue;
+    color: $color-white;
+    font-size: 1.875rem;
   }
 }
