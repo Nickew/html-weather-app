@@ -5,9 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pref": "postcss -u autoprefixer --autoprefixer.browser '&gt; 5%, ie 8' -r dist/*",
+    "uglify": "uglifyjs dist/*.js --output dist/bundle.min.js -c -m",
+    "browserify": "browserify src/js/index.js -o dist/bundle.js",
     "serve": "browser-sync start --server dist --files \"**/*.css, **/*.js, **/*.html, !node_modules/**/*.html\"",
     "imagemin": "imagemin src/images/* --out-dir=dist/images",
-    "build:js": "browserify src/js/index.js -o dist/index.js",
+    "build:js": "run-s browserify uglify",
     "build:css": "node-sass --output-style compressed -o dist/ src/scss/index.scss",
     "build:images": "run-s imagemin",
     "build:html": "find ./src -name \"*.html\" -type f -exec cp {} ./dist \\;",
