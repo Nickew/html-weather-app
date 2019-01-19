@@ -4,9 +4,6 @@
   height: 462px;
   display: flex;
   align-items: center;
-  &__content {
-
-  }
   &__title {
     font-size: 2.25rem;
     font-weight: bold;
@@ -38,5 +35,43 @@
     width: 716px;
     height: 399px;
     background: url(images/d-bg-phones.png) no-repeat;
+  }
+}
+
+@media screen and (max-width: $desk-medium) {
+  .download {
+    &--phones {
+      right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $xs) and (max-width: $desk-small) {
+  .download {
+    &__buttons {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: $desk-small) {
+  .download {
+    margin-top: 60px;
+    &__content {
+      text-align: center;
+    }
+    &__subtitle {
+      margin: 0 auto;
+    }
+    &--phones {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: $medium) {
+  .download {
+    &__title {
+      font-size: 1.5rem;
+    }
   }
 }

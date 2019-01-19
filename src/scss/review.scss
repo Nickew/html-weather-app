@@ -27,3 +27,29 @@
     text-transform: capitalize;
   }
 }
+
+
+@media screen and (min-width: $xs) and (max-width: $medium) {
+  .review {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .review {
+    flex: 0 1 100%;
+    &__quote {
+      font-size: 6rem;
+      &--start {
+        margin-bottom: -60px;
+      }
+      &--end {
+        margin-top: -90px;
+      }
+    }
+    &__text {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  }
+}

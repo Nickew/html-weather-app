@@ -1,7 +1,8 @@
 .widgets {
   padding-top: 185px;
   &__content {
-    width: 857px;
+    width: 100%;
+    max-width: 857px;
     height: 747px;
     margin: 0 auto;
   }
@@ -10,6 +11,78 @@
       width: 100%;
       height: 100%;
       background: url(images/w-widgets.png) no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-medium) and (max-width: $tablet-large) {
+  .widgets {
+    &__composition {
+      &--weather {
+        height: 85%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-medium) {
+  .widgets {
+    &__composition {
+      &--weather {
+        height: 83%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .widgets {
+    &__composition {
+      &--weather {
+        height: 83%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $medium) and (max-width: 667px) {
+  .widgets {
+    &__composition {
+      &--weather {
+        height: 87%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .widgets {
+    &__composition {
+      &--weather {
+        height: 85%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $xs) {
+  .widgets {
+    padding-top: 80px;
+    &__composition {
+      &--weather {
+        height: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $xxs) {
+  .widgets {
+    &__composition {
+      &--weather {
+        height: 75%;
+      }
     }
   }
 }

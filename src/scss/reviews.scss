@@ -7,3 +7,12 @@
     justify-content: space-between;
   }
 }
+
+
+@media screen and (max-width: $xs) {
+  .reviews {
+    &__container {
+      padding-top: 40px;
+    }
+  }
+}

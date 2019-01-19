@@ -25,3 +25,11 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet-large) {
+  .nav {
+    &__list {
+      display: none;
+    }
+  }
+}

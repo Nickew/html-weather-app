@@ -91,6 +91,59 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  
+@media screen and (min-width: $tablet-medium) and (max-width: $tablet-large) {
+  .header {
+    &__circle-1, &__circle-2, &__circle-3, &__circle-4 {
+      display: none!important;
+    }
+    &__intro {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: $small) and (max-width: $tablet) {
+  .header {
+    &__intro {
+      padding-top: 0;
+    }
+    &__content {
+      padding-top: 60px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .header {
+    height: 720px;
+    &--blue {
+      background-size: cover;
+    }
+    &__composition {
+      display: none;
+    }
+    &__content {
+      flex: 0 1 100%;
+    }
+    &__buttons {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: $xs) {
+  .header {
+    height: 620px;
+    &__intro {
+      padding-top: 20px;
+    }
+    &__content {
+      padding-top: 0;
+    }
+    &__title {
+      font-size: 3rem;
+    }
+  }
 }

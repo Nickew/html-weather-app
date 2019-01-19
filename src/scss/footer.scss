@@ -48,3 +48,19 @@
     background: $color-sapphire-a;
   }
 }
+
+@media screen and (max-width: $medium) {
+  .footer {
+    &__content {
+      padding: 40px 0;
+    }
+    &__logotype {
+      margin: 0 auto;
+    }
+    &__bottom {
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+  }
+}

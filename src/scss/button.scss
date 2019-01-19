@@ -28,3 +28,12 @@
     font-weight: bold;
   }
 }
+
+@media screen and (max-width: $xs) {
+  .button {
+    &--orange, &--dark-blue {
+      max-width: 158;
+      width: 100%;
+    }
+  }
+}

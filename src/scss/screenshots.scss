@@ -4,3 +4,11 @@
     padding-top: 200px;
   }
 }
+
+@media screen and (max-width: $medium) {
+  .screenshots {
+    &__content {
+      padding-top: 100px;
+    }
+  }
+}

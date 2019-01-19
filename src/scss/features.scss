@@ -1,8 +1,5 @@
 .features {
   padding-top: 135px;
-  &__content {
-
-  }
   &__list {
     padding-top: 115px;
     display: flex;
@@ -42,5 +39,19 @@
   }
   &__item-subtitle {
     color: $color-gray-b;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .features {
+    padding-top: 60px;
+    &__list {
+      padding-top: 50px;
+      flex-wrap: wrap;
+    }
+    &__item {
+      padding-top: 40px;
+      flex: 0 1 100%;
+    }
   }
 }
